@@ -46,7 +46,7 @@ Następnie przeprowadzono:
 `.gitignore`  Pliki wyłączone z kontroli wersji 
 `.Rproj`  Plik projektu RStudio 
 
-## 6. Informacje o danych i ograniczenia
+6. Informacje o danych i ograniczenia
 
 Wartości w zbiorze oznaczają wypisy ze szpitala, a nie liczbę unikalnych pacjentów. Jedna osoba może być hospitalizowana więcej niż jeden raz.
 Dane dotyczą głównego rozpoznania chorobowego i są przedstawione jako wskaźniki na 100 000 mieszkańców.
