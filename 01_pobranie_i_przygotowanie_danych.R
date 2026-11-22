@@ -9,7 +9,6 @@ library(dplyr)
 library(tidyr)
 library(readr)
 
-
 # 2. Pobranie danych z Eurostatu 
 
 # Pobieramy dane dotyczące hospitalizacji w Polsce w latach 2010–2021
@@ -22,6 +21,10 @@ dane <- get_eurostat(
   )
 )
 
+write_csv(
+  dane,
+  "dane_surowe.csv"
+)
 
 # 3. Wybór analizowanych grup chorób 
 
