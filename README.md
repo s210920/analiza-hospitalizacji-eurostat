@@ -26,6 +26,54 @@ Analiza obejmuje:
 
 Z analizy wyłączono kategorię dotyczącą ciąży, porodu i połogu, ponieważ nie dotyczy ona obu płci.
 
+4. Opis grup chorób
+
+W analizie wykorzystano 19 grup chorób i problemów zdrowotnych opartych na klasyfikacji ICD-10:
+
+Kod
+
+Opis grupy chorób
+
+A_B Niektóre choroby zakaźne i pasożytnicze
+
+C00-D48 Nowotwory
+
+D50-D89 Choroby krwi i narządów krwiotwórczych oraz niektóre zaburzenia dotyczące mechanizmów odpornościowych
+
+E Choroby układu hormonalnego, zaburzenia odżywiania i przemiany metabolicznej
+
+F Zaburzenia psychiczne i zaburzenia zachowania
+
+G Choroby układu nerwowego
+
+H00-H59 Choroby oka i przydatków oka
+
+H60-H95 Choroby ucha i wyrostka sutkowatego
+
+I Choroby układu krążenia
+
+J Choroby układu oddechowego
+
+K Choroby układu pokarmowego
+
+L Choroby skóry i tkanki podskórnej
+
+M Choroby układu mięśniowo-szkieletowego i tkanki łącznej
+
+N Choroby układu moczowo-płciowego
+
+P Niektóre stany rozpoczynające się w okresie okołoporodowym
+
+Q Wady rozwojowe wrodzone, zniekształcenia i aberracje chromosomowe
+
+R Objawy, oznaki i nieprawidłowe wyniki badań, niesklasyfikowane gdzie indziej
+
+S_T Urazy, zatrucia i inne określone skutki działania czynników zewnętrznych
+
+Z Czynniki wpływające na stan zdrowia i kontakt ze służbą zdrowia
+
+Z analizy wyłączono grupę O, obejmującą ciążę, poród i połóg, ponieważ nie dotyczy ona obu analizowanych płci.
+
 4. Przygotowanie danych
 
 Dane zostały pobrane bezpośrednio z Eurostatu przy użyciu pakietu `eurostat` w języku R.
