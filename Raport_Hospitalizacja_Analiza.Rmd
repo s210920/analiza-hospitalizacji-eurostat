@@ -14,23 +14,29 @@ library(eurostat)
 library(dplyr)
 library(tidyr)
 library(readr)
+library(naniar)
 
 # 2. Pobranie danych z Eurostatu 
 
-# Pobieramy dane dotyczące hospitalizacji w Polsce w latach 2010–2021
+# Wczytujemy dane dotyczące hospitalizacji w Polsce w latach 2010–2021
 
-dane <- get_eurostat(
-  id = "hlth_co_disch2",
-  filters = list(
-    geo = "PL",
-    time = 2010:2021
-  )
-)
-
-write_csv(
-  dane,
-  "dane_surowe.csv"
-)
+dane <- read_csv("dane_surowe.csv")   #w raporcie wczytujemy już pobrane dane z pliku csv, bo pobieranie danych z Eurostatu trwa długo
 ```
 
-## 
+# 1. Wprowadzenie
+
+# 2. Porządkowanie i czyszczenie danych
+
+## 2.1 Braki danych
+
+Liczba braków w danych to `r n_miss(dane)`,
+co stanowi `r pct_miss(dane)` % wszystkich danych.
+
+```{r}
+vis_miss(dane, warn_large_data = FALSE)
+```
+
+```{r}
+gg_miss_var(dane)  #tu nie ma po co robić tego, bo mamy braki tylko w jednej kolumnie
+```
+
