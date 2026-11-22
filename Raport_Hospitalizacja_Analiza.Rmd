@@ -1,0 +1,36 @@
+---
+title: "Raport_Hospitalizacja_Analiza"
+author: "Ewa Celmer"
+date: "2026-11-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# 1. Wczytanie bibliotek 
+
+library(eurostat)
+library(dplyr)
+library(tidyr)
+library(readr)
+
+# 2. Pobranie danych z Eurostatu 
+
+# Pobieramy dane dotyczące hospitalizacji w Polsce w latach 2010–2021
+
+dane <- get_eurostat(
+  id = "hlth_co_disch2",
+  filters = list(
+    geo = "PL",
+    time = 2010:2021
+  )
+)
+
+write_csv(
+  dane,
+  "dane_surowe.csv"
+)
+```
+
+## 

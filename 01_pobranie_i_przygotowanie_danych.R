@@ -2,6 +2,7 @@
 # Źródło danych: Eurostat
 # Zbiór danych: hlth_co_disch2
 
+
 # 1. Wczytanie bibliotek 
 
 library(eurostat)
